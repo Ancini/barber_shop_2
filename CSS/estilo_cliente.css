@@ -1,0 +1,120 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GRID SUPERIOR */
+.borda_principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 10px;
+}
+
+.card {
+    background: rgba(0, 74, 173, 1);
+    border-radius: 15px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.total_agendamentos { background: rgb(228, 34, 34); }
+.ranking { background: rgba(148, 150, 13, 1); }
+.pontuacao { background: rgba(211, 214, 26, .9); }
+
+.icone {
+    width: 48px;
+}
+
+/* ---------------------------------------
+        ÁREA DE DATAS — IGUAL AO FIGMA
+----------------------------------------*/
+
+.datas_container {
+    text-align: center;
+}
+
+.datas_titulo {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: rgba(0, 74, 173, 1);
+    font-weight: bold;
+}
+
+.datas_lista {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.card_data {
+    background:  rgba(0, 74, 173, 1);
+    width: 110px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card_data:hover,
+.card_data.ativo {
+    background: rgb(0, 95, 220);
+    transform: scale(1.05);
+}
+
+.data_dia {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.data_semana {
+    font-size: 16px;
+}
+
+/* SELECTS */
+select {
+    background-color: rgba(0, 74, 173, 1);
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+.selecionar_barbearia,
+.selecionar_barbeiro,
+.selecionar_servico,
+.selecionar_horario {
+    text-align: center;
+}
+
+/* BOTÃO */
+button {
+    background-color: rgba(0, 74, 173, 1);
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
