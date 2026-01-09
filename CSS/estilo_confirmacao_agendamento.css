@@ -31,11 +31,11 @@
         box-shadow 0.2s ease,
         background-color 0.2s ease;
 }
-.card:hover {
-    transform: translateY(-6px);   /* 🔥 sobe, vem pra frente */
-    background-color: rgb(17, 103, 230); /* muda a cor */
-    box-shadow: 0 10px 25px rgba(183, 33, 33, 0.35); /* ganha profundidade */
-}
+    .card:hover {
+        transform: translateY(-6px);   /* 🔥 sobe, vem pra frente */
+        background-color: rgb(17, 103, 230); /* muda a cor */
+        box-shadow: 0 10px 25px rgba(183, 33, 33, 0.35); /* ganha profundidade */
+    }
 
 /* quando clicar */
 .card:active {
@@ -153,12 +153,10 @@ height: 150px;
 .detalhes_agendamento{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
     width: 90%;
-    height: 150px;
+    height: 250px;
     margin: auto;
-
     background:  rgba(0, 74, 173, 1);
     border-radius: 15px;
     color: #fff;
@@ -192,4 +190,82 @@ height: 150px;
     margin-top: 5px;
     display: inline-block;
 }
+
+
+.botoes{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;   
+    margin:auto;
+    
+
+}
+
+.editar{
+    background-color: rgba(245, 131, 44, 1);
+    gap:10px;
+    border-radius: 15px;
+    width: 90%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+.cancelar{
+    background-color:rgba(238, 4, 4, 1);
+    gap:10px;
+    border-radius: 15px;
+    width: 90%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+.confirmar{
+    background-color: rgba(14, 175, 14, 1);
+    gap:10px;
+    border-radius: 15px;
+    width: 90%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+    
+}
+
+.editar,
+.cancelar,
+.confirmar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.editar:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(245, 131, 44, 0.45);
+}
+
+.cancelar:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(238, 4, 4, 0.45);
+}
+
+.confirmar:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(14, 175, 14, 0.45);
+}
+
+.titulo1,
+.titulo2{
+    font-weight: bold;
+}
+
 
